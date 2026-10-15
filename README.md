@@ -2,6 +2,10 @@
 
 Blur a photo or a screenshot without leaving the conversation.
 
+## How to install
+
+Give your Claude agent the ling to this repo and ask it to install the plugin
+
 ## Use it
 
 Attach an image and say what to blur. Ask for the whole picture and you get the whole
