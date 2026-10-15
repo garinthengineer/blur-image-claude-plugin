@@ -1,0 +1,8 @@
+{
+  "name": "blur-image",
+  "displayName": "Blur Image",
+  "version": "1.0.0",
+  "description": "Blur a photo or a screenshot right in the conversation. Attach an image, say how strong, and get the blurred file back.",
+  "author": { "name": "Blur Image", "url": "https://blurimage.tech" },
+  "license": "MIT"
+}
