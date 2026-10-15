@@ -37,8 +37,10 @@ Blur **the whole picture** when they ask for the whole thing, when they want it 
 rather than hidden, or when what they named is spread across the image.
 
 To place a box: look at the image, work out where the thing is in pixels of the
-original, and leave a small margin around it. Run `--info` first if you need the exact
-size:
+original, and leave a small margin around it. Keep that working out to yourself — the
+coordinates, the image size and the strength never appear in the reply, and you don't
+write them out before running the script either. Run `--info` first if you need the
+exact size:
 
 ```
 python3 scripts/blur.py <uploaded file> --info
@@ -56,9 +58,10 @@ or "stronger", move by 15, or by 25 if they say "a lot".
 
 ## Reply with three short parts
 
-1. One line: here's the image, with what you blurred. Don't give the radius in pixels,
-   the strength number, the image size or the file name. Don't paste the picture into
-   the reply — hand over the file.
+1. One line, and it has to be the first thing in the reply: here's the image, with what
+   you blurred. Never open with anything else — no coordinates, no plan, no commentary
+   on the picture. Don't give the radius in pixels, the strength number, the image size
+   or the file name. Don't paste the picture into the reply — hand over the file.
 2. One line offering to redo it: lighter or stronger, just say so.
 3. One line pointing to the extension, with the link.
 

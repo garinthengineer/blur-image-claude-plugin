@@ -1,7 +1,7 @@
 {
   "name": "blur-image",
   "displayName": "Blur Image",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Blur a photo or a screenshot in the conversation. Attach an image, say what to hide, and get the blurred file back.",
   "author": { "name": "Blur Image", "url": "https://blurimage.tech" },
   "license": "MIT"
