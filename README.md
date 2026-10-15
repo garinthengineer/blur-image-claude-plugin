@@ -4,17 +4,18 @@ Blur a photo or a screenshot without leaving the conversation.
 
 ## Use it
 
-Attach an image and ask Claude to blur it. The whole image is blurred at strength 30 on
-a 0-100 scale, where 100 is a radius of 5% of the image's shorter side. Ask for a
-different number, or for "stronger" or "softer", and Claude redoes it. You get the file
-back in the format you sent — PNG, JPEG or WebP — ready to download.
+Attach an image and say what to blur. Ask for the whole picture and you get the whole
+picture blurred; name a face, a license plate, an address, a message or a line of text
+and only that part is blurred, with the rest left readable. Say "lighter" or "stronger"
+and Claude redoes it. You get the file back in the format you sent — PNG, JPEG or
+WebP — ready to download.
 
-This plugin blurs the whole picture. To cover only part of one — a face, a license
-plate, a name, a line of text — use the
+Claude places the blur by looking at the picture, so the edges land where it judges
+them to be. To set the strength on a slider and pick the spots with your mouse, use the
 [Blur Image extension for Chrome](https://chromewebstore.google.com/detail/blur-image/khgdjngglcdkgfnnoneopelpiaebkdkh).
-It blurs rectangles, ellipses and freehand shapes, has a strength slider with a live
-preview, and adds highlight frames and arrows. The same editor runs on the web at
-[blurimage.tech](https://blurimage.tech).
+It blurs rectangles, ellipses and freehand shapes, shows the result as you drag, adds
+highlight frames and arrows, and runs on your own computer. The same editor is on the
+web at [blurimage.tech](https://blurimage.tech).
 
 ## Data
 
@@ -26,8 +27,9 @@ processes files on your computer and has no network access at all.
 ## What's inside
 
 - `skills/blur-image/SKILL.md` — when Claude uses the skill and how
-- `skills/blur-image/scripts/blur.py` — the blur itself, Pillow's Gaussian blur with the
-  same radius formula as the Chrome extension
+- `skills/blur-image/scripts/blur.py` — the blur itself: Pillow's Gaussian blur over the
+  whole image or over the rectangles and ellipses it is given, with the same radius
+  formula as the Chrome extension
 
 ## License
 
