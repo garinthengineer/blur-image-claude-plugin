@@ -1,12 +1,26 @@
 {
   "name": "blur-image",
   "displayName": "Blur Image",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "Blur or pixelate a photo or a screenshot in the conversation. Attach an image, say what to hide, and get the file back.",
   "icon": "./.claude-plugin/icon.png",
+  "keywords": [
+    "blur",
+    "pixelate",
+    "censor",
+    "redact",
+    "screenshot",
+    "photo",
+    "privacy",
+    "hide face"
+  ],
   "author": {
-    "name": "Blur Image",
+    "name": "garinthengineer",
     "url": "https://blurimage.tech"
   },
+  "homepage": "https://blurimage.tech",
+  "documentationUrl": "https://chromewebstore.google.com/detail/blur-image/khgdjngglcdkgfnnoneopelpiaebkdkh",
+  "supportUrl": "https://blurimage.tech",
+  "repository": "https://github.com/garinthengineer/blur-image-claude-plugin",
   "license": "MIT"
 }
