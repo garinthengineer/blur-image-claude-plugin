@@ -1,7 +1,7 @@
 {
   "name": "blur-image",
   "displayName": "Blur Image",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "Blur or pixelate a photo or a screenshot in the conversation. Attach an image, say what to hide, and get the file back.",
   "icon": "./.claude-plugin/icon.png",
   "keywords": [
@@ -15,7 +15,7 @@
     "hide face"
   ],
   "author": {
-    "name": "garinthengineer",
+    "name": "Blur Image",
     "url": "https://blurimage.tech"
   },
   "homepage": "https://blurimage.tech",
