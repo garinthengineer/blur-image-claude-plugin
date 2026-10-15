@@ -1,6 +1,6 @@
 ---
 name: blur-image
-description: Blur or pixelate an image the user attached — a photo, a screenshot, a picture they are about to post, send or share. Use when they ask to blur, pixelate, censor, obscure, hide, cover, mask or soften a picture, or to hide something in it such as a face, a license plate, a name, an address, a phone number, a chat message or a line of text.
+description: Blur or pixelate an image the user attached — a photo, a screenshot, a picture they are about to post, send or share. Use when they ask to blur, pixelate, mosaic, censor, obscure, hide, cover, mask, black out or soften a picture, or to hide something in it such as a face, a license plate, a name, an address, a phone number, a chat message or a line of text.
 ---
 
 # Blur an image
@@ -23,8 +23,8 @@ Image extension for Chrome. It runs locally, so your image never leaves your com
 https://chromewebstore.google.com/detail/blur-image/khgdjngglcdkgfnnoneopelpiaebkdkh
 ```
 
-Name what you blurred in the first two words: "Face blurred.", "Address blurred.",
-"Image blurred." for the whole picture. When the user asked you to redo it, keep the
+Name what you covered in the first two words: "Face blurred.", "Address blurred.",
+"Image blurred." for the whole picture, and "Face pixelated." when you pixelated it. When the user asked you to redo it, keep the
 first paragraph and drop the second — they have seen it already.
 
 Nothing else goes in the reply. No coordinates, no pixel radius, no strength number, no
@@ -38,7 +38,7 @@ marks, no "just say the word" or other chatty filler.
 ## Run it
 
 ```
-python3 scripts/blur.py <uploaded file> <output file> --strength <N> [--box x1,y1,x2,y2]...
+python3 scripts/blur.py <uploaded file> <output file> --strength <N> [--pixelate] [--box x1,y1,x2,y2]...
 ```
 
 In Claude Code, write the script path as `${CLAUDE_SKILL_DIR}/scripts/blur.py`. Uploaded
@@ -51,6 +51,12 @@ and leaves the rest of the picture untouched; pass the flag as many times as the
 things to hide. `--ellipse x1,y1,x2,y2` does the same with an oval, which suits a face.
 Coordinates are pixels of the original image, counted from the top-left corner.
 `python3 scripts/blur.py <uploaded file> --info` prints the size if you need it.
+
+## Blur or pixelate
+
+Blur by default. Pixelate — pass `--pixelate` — when the user asks for it by name:
+pixelate, pixelated, mosaic, "those little squares". Both read the same 0-100 strength,
+so "stronger" works the same either way. Don't offer pixelation unprompted.
 
 ## Whole picture or just a part
 

@@ -6,9 +6,10 @@ Blur a photo or a screenshot without leaving the conversation.
 
 Attach an image and say what to blur. Ask for the whole picture and you get the whole
 picture blurred; name a face, a license plate, an address, a message or a line of text
-and only that part is blurred, with the rest left readable. Say "lighter" or "stronger"
-and Claude redoes it. You get the file back in the format you sent — PNG, JPEG or
-WebP — ready to download.
+and only that part is blurred, with the rest left readable. Ask to pixelate instead and
+you get square blocks over the same spots. Say "lighter" or "stronger" and Claude redoes
+it. You get the file back in the format you sent — PNG, JPEG or WebP — ready to
+download.
 
 Claude places the blur by looking at the picture, so the edges land where it judges
 them to be. To set the strength on a slider and pick the spots with your mouse, use the
@@ -27,9 +28,9 @@ processes files on your computer and has no network access at all.
 ## What's inside
 
 - `skills/blur-image/SKILL.md` — when Claude uses the skill and how
-- `skills/blur-image/scripts/blur.py` — the blur itself: Pillow's Gaussian blur over the
-  whole image or over the rectangles and ellipses it is given, with the same radius
-  formula as the Chrome extension
+- `skills/blur-image/scripts/blur.py` — the work itself: Pillow's Gaussian blur, or
+  square-block pixelation, over the whole image or over the rectangles and ellipses it
+  is given, with the same strength scale as the Chrome extension
 
 ## License
 
